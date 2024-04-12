@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+header {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.25)
+}
+
+header img {
+    width: 74px;
+}
+
+.mobile-menu div {
+    width: 26px;
+    height: 3px;
+    background: #000;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.desktopVersion {
+    display: none;
+}
+
+.nav-list {
+    position: absolute;
+    top: 4.4rem;
+    right: 0;
+    left: -110%;
+    width: 100vw;
+    height: 95vh;
+    background-color: #D9D9D9;
+    padding: 1rem;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.45s ease-out;
+}
+
+.nav-list.open {
+    left: 0;
+}
+
+.nav-list.open a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+.ph-list {
+    color: black;
+    width: 40px;
+}
+
+/*Section Home*/
+#home {
+    padding: 1rem;
+}
+
+#home img {
+    width: 310px;
+}
+
+.pc-img {
+    display: flex;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 1.5rem;
+    margin: 25px 0 20px;
+}
+
+.textTest {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    /* background-size: 65%;
+    background-image: linear-gradient(90deg, rgba(55,52,110,1) 0%, rgba(255,255,255,1) 0%, rgba(24,160,245,1) 0%, rgba(245,159,39,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+.btnContact {
+    margin-top: 35px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1D1D1D;
+    cursor: pointer;
+}
+
+.btnContact a {
+    color: #fff;
+}
+
+/*Section About*/
+
+#about {
+    background-color: #1D1D1D;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.img-stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mineImg {
+    padding: 5rem 0 3rem;
+}
+
+.stacks {
+    display: flex;
+    gap: 24px;
+}
+
+.infosAbout {
+    margin-bottom: 2rem;
+}
+
+.infosAbout h2 {
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+
+.infosAbout .secondP {
+    font-size: 1.2rem;
+}
+
+.infosAbout .paragraph {
+    font-weight: 400;
+}
+
+.txtAbout {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #F59F27;
+    font-size: 1rem;
+}
+
+
+/*Section Project*/
+
+#projects {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textProjects h2 {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #F59F27;
+    font-size: 1rem;
+}
+
+.textProjects p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.projectCard {
+    background-color: #1D1D1D;
+    color: #fff;
+    max-width: 315px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.projectCard img {
+    max-width: 282px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.projectName {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.projectInfo {
+    font-size: 0.875rem;
+    font-weight: 300;
+    height: 84px;
+    color: #CDD0D4;
+}
+
+.linksProjetos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.linksProjetos i {
+    color: white;
+}
+
+.linksProjetos a {
+    width: 100%;
+}
+
+.linksProjetos a button {
+    height: 25px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.linksProjetos .btnStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.linksProjetos a button:hover {
+    background-color: #F59F27;
+}
+
+.linksProjetos a button:hover span,
+.linksProjetos a button:hover i {
+    color: #000;
+}
+
+
+/*Section Contact*/
+
+.contato {
+    background-color: #1D1D1D;
+}
+
+#contact {
+    background-color: #1D1D1D;
+    padding: 3rem 1rem;
+    color: #fff;
+}
+
+.contatoText {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #F59F27;
+    font-size: 1rem;
+}
+
+.likeMyJob {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+.contactInfos p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #CDD0D4;
+}
+
+.redesContato {
+    margin: 25px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.redesContato button {
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.redesContato img {
+    width: 24px;
+    height: 24px;
+}
+
+#my-form,
+.homeCel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#my-form input,
+textarea {
+    width: 100%;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    padding: 24px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn-form-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 16px 24px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    padding: 3rem 1rem;
+}
+
+footer img {
+    width: 74px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navListFooter {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.navListFooter a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rodape span {
+    text-align: center;
+}

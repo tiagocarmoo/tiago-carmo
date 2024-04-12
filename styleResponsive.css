@@ -1,0 +1,210 @@
+@media (min-width: 840px) {
+
+    header {
+        padding: 1.5rem 3rem;
+
+    }
+
+    .desktopVersion li {
+        transition: all .3s ease-in-out;
+    }
+
+    .desktopVersion li a:hover {
+        color: #F59F27;
+    }
+
+    .btnContact {
+        transition: all .2s ease-out;
+
+    }
+
+    .btnContact:hover {
+        background-color: #000000;
+    }
+
+    .navListFooter li a:hover {
+        color: #F59F27;
+
+    }
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    /* .projectCard {
+        transition: all .35s ease;
+    }
+
+    .projectCard:hover {
+        transform: scale(0.9) translateY(-5px);
+    } */
+
+    .btn-form-submit {
+        transition: all .2s ease-out;
+    }
+
+    .btn-form-submit:hover {
+        color: #F59F27;
+
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .desktopVersion {
+        display: flex;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        gap: 20px;
+    }
+
+    .desktopVersion a {
+        color: #000;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    #home {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        padding: 4rem 3rem;
+    }
+
+    #about {
+        /* height: 100vh; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 40px;
+        padding: 5rem 3rem;
+        border-radius: 16px;
+    }
+
+    .img-stacks {
+        padding-bottom: 70px;
+    }
+
+    #projects {
+        gap: 70px;
+        padding: 4rem 3rem;
+    }
+
+    .projectsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .textProjects h2 {
+        font-size: 2.5rem;
+    }
+
+    .textProjects p {
+        font-size: 2.2rem;
+    }
+
+    #contact {
+        border-radius: 16px;
+        padding: 2rem;
+
+    }
+
+    .contatoText {
+        font-size: 2rem;
+    }
+
+    .rodape {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 1.5rem 5rem;
+    }
+
+    #about {
+        margin: 0 5%;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem 3rem;
+        margin: 0 5%;
+
+    }
+
+    .formContato {
+        margin-left: 4rem;
+    }
+
+    .homeCel {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contactInfos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1700px) {
+    header {
+        padding: 1rem 10%;
+    }
+
+    #home {
+        margin: 0 14%;
+    }
+
+    #about {
+        margin: 0 10%;
+        padding: 3rem 4rem;
+    }
+
+    #projects {
+        margin: 0 10%;
+
+    }
+
+    .textProjects h2 {
+        font-size: 2rem;
+    }
+
+    .textProjects p {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        margin: 0 10%;
+        padding: 3rem 4rem;
+    }
+
+    .contatoText {
+        font-size: 1.5rem;
+    }
+
+    .likeMyJob {
+        font-size: 1.5rem;
+    }
+}

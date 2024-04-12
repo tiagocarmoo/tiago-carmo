@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./main.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "lxddMXFVTmxDsY1j6",
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleResponsive.css">
+    <title>Tiago Carmo</title>
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <img src="./assets/logo.svg" alt="" class="logo">
+            <div class="mobile-menu" id="menuHamburguer">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <ul class="desktopVersion">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="home">
+                <div class="pc-img">
+                    <img src="./assets/pc-img.svg" alt="">
+                </div>
+                <div>
+                    <h2 class="textTest">Olá, eu sou o Tiago</h2>
+                    <h1>Desenvolvedor front-end</h1>
+                    <p>Profissional com mais de 3 anos de vivência em gestão de pessoas e projetos no audiovisual. Busco
+                        oportunidades para adquirir novas experiências e aplicar meu conhecimento em tecnologias como
+                        React, Sass, HTML, Bootstrap, TypeScript e Node.js.</p>
+                    <button class="btnContact">
+                        <a href="#contact">Fale comigo <i class="ph ph-arrow-right"></i></a>
+                    </button>
+                </div>
+            </section>
+            <section id="about">
+                <div class="img-stacks">
+                    <img class="mineImg" src="./assets/mineImg.svg" alt="">
+                    <div class="stacks">
+                        <img src="./assets/stacks/js.svg" alt="">
+                        <img src="./assets/stacks/html.svg" alt="">
+                        <img src="./assets/stacks/react.svg" alt="">
+                        <img src="./assets/stacks/tailwind.svg" alt="">
+                        <img src="./assets/stacks/sass.svg" alt="">
+                        <img src="./assets/stacks/node.svg" alt="">
+                        <img src="./assets/stacks/bootstrap.svg" alt="">
+                    </div>
+                </div>
+                <div class="infosAbout">
+                    <h2 class="txtAbout">Sobre mim</h2>
+                    <h2 class="secondP">Sou um entusiasmado desenvolvedor front-end afim de compartilhar meus
+                        conhecimentos e expandir minhas habilidades.</h2>
+                    <p class="paragraph">Além disso, atuei como produtor e editor de vídeos e fotos, acumulando 4 anos
+                        de experiência em trabalho em equipe, gestão de pessoas, gerenciamento de projetos e, é claro,
+                        cumprimento de prazos de entrega. Não menos importante, sou um viciado em café. Quem sabe
+                        possamos tomar um juntos?</p>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="textProjects">
+                    <h2>Projetos</h2>
+                    <p>Confira abaixo alguns trabalhos feitos por mim</p>
+                </div>
+                <div class="projectsContainer">
+                    <div class="projectCard">
+                        <img src="./assets/timerStudy.svg" alt="">
+                        <p class="projectName">Timer para estudo</p>
+                        <p class="projectInfo">Projeto de um cronômetro inspirado no classico "Pomodoro Timer" com
+                            opção
+                            de colocar um som ambiente para te ajudar a focar nos estudos</p>
+                        <div class="linksProjetos">
+                            <a href="https://github.com/tiagocarmoo/timer-study" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Github</span>
+                                    <i class="ph ph-github-logo"></i>
+                                </button>
+                            </a>
+
+                            <a href="https://timer-study-nine.vercel.app/" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Site</span>
+                                    <i class="ph ph-globe"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="./assets/luck.svg" alt="">
+                        <p class="projectName">Biscoito da sorte</p>
+                        <p class="projectInfo">Projeto de um biscoito da sorte com algumas frases motivacionais.</p>
+                        <div class="linksProjetos">
+                            <a href="https://github.com/tiagocarmoo/biscoito-da-sorte" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Github</span>
+                                    <i class="ph ph-github-logo"></i>
+                                </button>
+                            </a>
+
+                            <a href="https://biscoito-da-sorte-hazel.vercel.app/" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Site</span>
+                                    <i class="ph ph-globe"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="./assets/onePiece.svg" alt="">
+                        <p class="projectName">One Piece</p>
+                        <p class="projectInfo">Projeto feito em html, css e js. para mostrar algumas informações dos
+                            principais personagens do anime.</p>
+                        <div class="linksProjetos">
+                            <a href="https://github.com/tiagocarmoo/one-piece" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Github</span>
+                                    <i class="ph ph-github-logo"></i>
+                                </button>
+                            </a>
+
+                            <a href="https://one-piece-weld.vercel.app/" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Site</span>
+                                    <i class="ph ph-globe"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="./assets/classix.svg" alt="">
+                        <p class="projectName">Classix E-commerce</p>
+                        <p class="projectInfo">Protótipo de um ecommerce voltado para roupas, feito em uma página unica,
+                            single page application.</p>
+                        <div class="linksProjetos">
+                            <a href="https://github.com/tiagocarmoo/projeto-classix" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Github</span>
+                                    <i class="ph ph-github-logo"></i>
+                                </button>
+                            </a>
+
+                            <a href="https://tiagocarmoo.github.io/projeto-classix/#" target="_blank">
+                                <button class="btnStyle">
+                                    <span>Site</span>
+                                    <i class="ph ph-globe"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contato">
+                <div class="contactInfos">
+                    <h2 class="contatoText">contato</h2>
+                    <h2 class="likeMyJob">Gostou do meu trabalho ? Vamos trabalhar juntos</h2>
+                    <p>Entre em contato comigo via e-mail, ou se preferir, pode mandar mensagem em alguma das minhas
+                        redes sociais abaixo.</p>
+                    <div class="redesContato">
+                        <button>
+                            <a href="https://github.com/tiagocarmoo" target="_blank">
+                                <img src="./assets/logoGit.svg" alt="">
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.linkedin.com/in/tiago-do-carmo/" target="_blank">
+                                <img src="./assets/logoLinkedin.svg" alt="">
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/tiagodoopin/" target="_blank">
+                                <img src="./assets/logoInsta.svg" alt="">
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://wa.me/5511948354001" target="_blank">
+                                <img src="./assets/logoWhats.svg" alt="">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="formContato">
+                    <form id="my-form">
+                        <div class="homeCel">
+                            <input type="text" id="fullName" required placeholder="Nome">
+                            <input type="number" id="telephone" required placeholder="Celular" minlength="10">
+                        </div>
+                        <input type="email" id="email_id" required placeholder="E-mail">
+                        <textarea id="message" required placeholder="Sua mensagem"></textarea>
+                    </form>
+                    <input onclick="SendMail()" class="btn-form-submit" type="submit" form="my-form"
+                        value="Enviar Mensagem">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="rodape">
+                <img src="./assets/logo.svg" alt="" class="logo">
+                <ul class="navListFooter">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <span>Copyright © 2024 Tiago Carmo | todos os direitos reservados</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
