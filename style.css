@@ -117,13 +117,13 @@ header img {
     margin: 25px 0 20px;
 }
 
-.textTest {
+.titleHello {
     font-family: "Kalam", cursive;
     font-weight: 400;
-    /* background-size: 65%;
+    background-size: 65%;
     background-image: linear-gradient(90deg, rgba(55,52,110,1) 0%, rgba(255,255,255,1) 0%, rgba(24,160,245,1) 0%, rgba(245,159,39,1) 100%);
     -webkit-background-clip: text;
-    color: transparent; */
+    color: transparent;
 }
 
 .btnContact {
